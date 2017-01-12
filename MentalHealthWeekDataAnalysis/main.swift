@@ -76,9 +76,9 @@ for line in reader {
 			if (tempData.count > 10) {
 				// B:reakfast P:hysical Y:oga L:ibrary A:nimals S:leep R:elax M:assage
 				//  9's: BPYLA BPYLA BPYLAR SBPRLA SPRLAM
-				// 10's: 
-				// 11's:
-				// 12's:
+				// 10's: BPYLA BPYLA SBPYLAR BPRLA SPRLAM
+				// 11's: BPYLA SBPYLA BPYLAR BPRLA SPRLAM
+				// 12's: SBPYLA BPYLA BPYLAR BPRLA SPRLAM
 				print(tempData)
 				print("\n")
 			}
