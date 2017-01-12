@@ -6,6 +6,8 @@
 //  Copyright © 2017 Brendan Leder. All rights reserved.
 //
 
+import Foundation
+
 struct Student {
     var grade : Int
     var advisor : String

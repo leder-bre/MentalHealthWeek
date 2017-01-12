@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C6192CB31E280A11004B0DFE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6192CB21E280A11004B0DFE /* main.swift */; };
+		C6192CBA1E280EF6004B0DFE /* lineReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6192CB91E280EF6004B0DFE /* lineReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		C6192CAF1E280A11004B0DFE /* MentalHealthWeekDataAnalysis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MentalHealthWeekDataAnalysis; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6192CB21E280A11004B0DFE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C6192CB91E280EF6004B0DFE /* lineReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lineReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				C6192CB21E280A11004B0DFE /* main.swift */,
+				C6192CB91E280EF6004B0DFE /* lineReader.swift */,
 			);
 			path = MentalHealthWeekDataAnalysis;
 			sourceTree = "<group>";
@@ -122,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6192CB31E280A11004B0DFE /* main.swift in Sources */,
+				C6192CBA1E280EF6004B0DFE /* lineReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
