@@ -42,9 +42,19 @@ struct Activity {
 	}
 }
 
-var activities : [[Activity]]
-var students : [Student]
+var activities = [[Activity]]()
+var students = [Student]()
 
+for i in 0...4 {
+	activities.append([])
+	activities[activities.count-1].append(Activity(maxCount: 160, assignedCount: 0, name: "Casual Breakfast"))
+	activities[activities.count-1].append(Activity(maxCount: 40, assignedCount: 0, name: "Physical Activity"))
+	activities[activities.count-1].append(Activity(maxCount: 160, assignedCount: 0, name: "Relaxation"))
+	activities[activities.count-1].append(Activity(maxCount: 30, assignedCount: 0, name: "Academic Management"))
+	activities[activities.count-1].append(Activity(maxCount: 20, assignedCount: 0, name: "Yoga"))
+	activities[activities.count-1].append(Activity(maxCount: 16, assignedCount: 0, name: "Animal Therapy"))
+	activities[activities.count-1].append(Activity(maxCount: 12, assignedCount: 0, name: "Massage"))
+}
 
 // Read the text file
 guard let reader = LineReader(path: "/Users/student/survey_response_sample.txt") else {
@@ -79,6 +89,37 @@ for line in reader {
 				// 10's: BPYLA BPYLA SBPYLAR BPRLA SPRLAM
 				// 11's: BPYLA SBPYLA BPYLAR BPRLA SPRLAM
 				// 12's: SBPYLA BPYLA BPYLAR BPRLA SPRLAM
+				if (tempGrade == 9) {
+					var lookingForActivity = true
+					var currentTopRanking = 1
+					while lookingForActivity {
+						for i in 3...7 {
+							if (Int(tempData[i]) == currentTopRanking) {
+								// Check to see if student can be added to activity
+								switch i {
+								case 3: //Breakfast
+									break
+								case 4: //Physical Activity
+									break
+								case 5: //Yoga
+									break
+								case 6: //Academic
+									break
+								case 7: //Animals
+									break
+								default:
+									break
+								}
+							}
+						}
+					}
+				} else if (tempGrade == 10) {
+					
+				} else if (tempGrade == 11) {
+					
+				} else if (tempGrade == 12) {
+					
+				}
 				print(tempData)
 				print("\n")
 			}
