@@ -73,8 +73,15 @@ for line in reader {
 					tempData.remove(at: upperBound-i)
 				}
 			}
-			print(tempData)
-			print("\n")
+			if (tempData.count > 10) {
+				// B:reakfast P:hysical Y:oga L:ibrary A:nimals S:leep R:elax M:assage
+				//  9's: BPYLA BPYLA BPYLAR SBPRLA SPRLAM
+				// 10's: 
+				// 11's:
+				// 12's:
+				print(tempData)
+				print("\n")
+			}
 		}
 	}
 }
