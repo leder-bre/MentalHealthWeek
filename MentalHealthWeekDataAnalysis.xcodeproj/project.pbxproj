@@ -257,6 +257,7 @@
 				C6192CB81E280A11004B0DFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
